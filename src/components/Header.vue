@@ -3,10 +3,10 @@
         <h4><img src="../assets/images/logo.jpg"></h4>
         <div class="headerNav">
             <ul>
-                <li>首页</li>
-                <li>我们的服务</li>
-                <li>新闻动态</li>
-                <li>联系我们</li>
+                <li><router-link to="/home">首页</router-link></li>
+                <li><router-link to="/service">我们的服务</router-link></li>
+                <li><router-link to="/news">新闻动态</router-link></li>
+                <li><router-link to="/relate">联系我们</router-link></li>
             </ul>
         </div>
     </div>
@@ -45,16 +45,23 @@
         ul{
             li{
                 display: inline-block;
-                border: 1px #340c6f solid;
-                color: #340c6f;
-                text-align: center;
-                margin: 0 10px;
-                width: 88px;
-                height: 46px;
-                line-height: 46px;
-                border-radius: 4px;
-                &:hover{background:#340c6f;color: #fff }
+                a{
+                    display: inline-block;
+                    border: 1px #313131 solid;
+                    color: #313131;
+                    text-align: center;
+                    margin: 0 10px;
+                    width: 88px;
+                    height: 44px;
+                    line-height: 44px;
+                    border-radius: 4px;
+                    &:hover{background:$background;color: #fff ;border: 1px $color solid;}
+                }
+                .active{
+                    background:$background;color: #fff;border: 1px $color solid;
+                }
             }
+
         }
     }
 }
