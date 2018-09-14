@@ -55,7 +55,8 @@
                     height: 44px;
                     line-height: 44px;
                     border-radius: 4px;
-                    &:hover{background:$background;color: #fff ;border: 1px $color solid;}
+                    &:hover{background:$background;color: #fff ;border: 1px $color solid;
+                    }
                 }
                 .active{
                     background:$background;color: #fff;border: 1px $color solid;

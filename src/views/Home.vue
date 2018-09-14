@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-      <h2><span>服务项目</span><em></em></h2>
+      <h2><span>我们的产品</span><em></em></h2>
       <div class="projectList">
         <ul>
             <li v-for="item in projets">
@@ -14,6 +14,8 @@
       </div>
       <h2><span>合作伙伴</span><em></em></h2>
       <div class="partnerList">
+          <h2>四大联手,强强合作,轻松体验,邀您尊享</h2>
+          <p>深圳市威莱堡科技有限公司携手深圳电信、深圳联通、深圳移动三大电信运营商，为深圳湾科技生态园、创业投资大厦、创智天地大厦等园区企业提供一站式通信全业务的受理、报装、接入等服务。</p>
           <ul>
               <li><img src="../assets/images/yd.jpg"></li>
               <li><img src="../assets/images/lt.png"></li>
@@ -59,58 +61,74 @@ export default {
     margin: 0 auto;
     padding: 0 10%;
     margin-top: 20px;
-    h2{
+    >h2{
       text-align: center;
       font-size: 26px;
-      color: #009fe9;
-      margin: 40px 0;
+      margin: 40px 0 30px 0;
       span{
         display: inline-block;
-        border-bottom: 1px $color solid;
+        border-bottom: 4px #313131 solid;
         padding-bottom: 10px;
+        color: #313131;
+          font-weight: bold;
       }
     }
-    .projectList ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        li{
-            float: left;
-            width: 30%;
-            min-width: 220px;
-            max-width: 270px;
-            height: 300px;
-            padding: 2%;
-            border: 1px #ddd solid;
-            border-radius: 4px;
-            margin: 8px;
-            //-webkit-box-shadow: 5px 5px 14px #999;
-            h4{
-                text-align: center;
-                img{
-                    width: 50px;
+    .projectList {
+        width: 100%;
+        margin: 0 auto;
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            li{
+                float: left;
+                width: 30%;
+                min-width: 220px;
+                max-width: 270px;
+                height: 300px;
+                padding: 2%;
+                border: 1px #ddd solid;
+                border-radius: 4px;
+                margin: 8px;
+                -webkit-box-shadow: 5px 5px 14px #999;
+                h4{
+                    text-align: center;
+                    img{
+                        width: 50px;
+                    }
+                    span{
+                        display: block;
+                        font-size: 20px;
+                        margin: 20px 0;
+                    }
                 }
-                span{
-                    display: block;
-                    font-size: 20px;
-                    margin: 20px 0;
-                }
-            }
-            p{
             }
         }
+
     }
-      .partnerList ul {
-          display: flex;
-          justify-content: space-around;
-          li{
-              img{
-                  width: 150px;
+      .partnerList {
+          h2{
+              text-align: center;
+              font-size: 20px;
+              color: $color;
+          }
+          p{
+              text-align: center;
+          }
+          ul {
+              display: flex;
+              justify-content: space-around;
+              margin: 40px 0;
+              li{
+                  img{
+                      width: 150px;
+                  }
               }
           }
       }
 
 
-  }
+
+    }
 
 </style>
