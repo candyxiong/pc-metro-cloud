@@ -103,24 +103,8 @@
         visibility: hidden;
     }
     .serviceScope{
-        width: 1000px;
-        margin: 0 auto;
-        h2{
-            text-align: center;
-            font-size: 26px;
-            margin: 40px 0 20px 0;
-            span{
-                display: block;
-                color: $color;
-                font-weight: bold;
-            }
-            em{
-                display: inline-block;
-                border-bottom: 2px $color solid;
-                padding-bottom: 10px;
-                font-size: 18px;
-            }
-        }
+        @include mainCenter;
+        @include titleStyle;
         >p{
             text-align: center;
             font-size: 16px;
@@ -162,21 +146,8 @@
 
         }
     }
-    .serviceStep h2{
-        text-align: center;
-        font-size: 26px;
-        margin: 40px 0 20px 0;
-        span{
-            display: block;
-            color: $color;
-            font-weight: bold;
-        }
-        em{
-            display: inline-block;
-            border-bottom: 2px $color solid;
-            padding-bottom: 10px;
-            font-size: 18px;
-        }
+    .serviceStep {
+        @include titleStyle
     }
     .steps{
         //height:300px;
@@ -186,22 +157,7 @@
     .servicePromise {
         width: 1000px;
         margin: 36px auto;
-        h2{
-            text-align: center;
-            font-size: 26px;
-            margin: 40px 0 20px 0;
-            span{
-                display: block;
-                color: $color;
-                font-weight: bold;
-            }
-            em{
-                display: inline-block;
-                border-bottom: 2px $color solid;
-                padding-bottom: 10px;
-                font-size: 18px;
-            }
-        }
+        @include titleStyle;
         .promiseInfo{
             ul{
                 float: left;

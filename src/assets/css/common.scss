@@ -1,2 +1,33 @@
 $color:#340c6f;
-$background:#340c6f
+$background:#340c6f;
+
+@mixin mainCenter{
+  width: 1000px;
+  margin: 0 auto;
+}
+@mixin titleStyle {
+  h2{
+    text-align: center;
+    font-size: 26px;
+    margin: 40px 0 20px 0;
+    span{
+      display: block;
+      color: $color;
+      font-weight: bold;
+    }
+    em{
+      display: inline-block;
+      border-bottom: 2px $color solid;
+      padding-bottom: 10px;
+      font-size: 18px;
+    }
+  }
+}
+@mixin cicleStyle{
+  position: relative;
+  border-radius: 10px;
+  list-style: none;
+  width: 10px;
+  height: 10px;
+  border: 8px solid #ccc;
+}
