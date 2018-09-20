@@ -1,6 +1,7 @@
 <template>
   <div class="home">
-      <h2><span>我们的产品</span><em></em></h2>
+      <slider></slider>
+      <h2><span>我们的产品</span><em>Our products</em></h2>
       <div class="projectList">
         <ul>
             <li v-for="item in projets">
@@ -12,7 +13,7 @@
             </li>
         </ul>
       </div>
-      <h2><span>合作伙伴</span><em></em></h2>
+      <h2><span>合作伙伴</span><em>Cooperative partner</em></h2>
       <div class="partnerList">
           <h2>四大联手,强强合作,轻松体验,邀您尊享</h2>
           <p>深圳市威莱堡科技有限公司携手深圳电信、深圳联通、深圳移动三大电信运营商，为深圳湾科技生态园、创业投资大厦、创智天地大厦等园区企业提供一站式通信全业务的受理、报装、接入等服务。</p>
@@ -26,6 +27,7 @@
 </template>
 
 <script>
+    import Slider from '@/components/Slider'
     import img_phone from '@/assets/images/phone.jpg'
     import img_wifi from '@/assets/images/wifi.jpg'
     import img_line from '@/assets/images/line.jpg'
@@ -50,32 +52,34 @@ export default {
       }
   },
   components: {
-
+      'slider':Slider
   }
 };
 </script>
 
 <style lang="scss" scoped>
   .home {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 10%;
     margin-top: 20px;
     >h2{
       text-align: center;
       font-size: 26px;
       margin: 40px 0 30px 0;
       span{
-        display: inline-block;
-        border-bottom: 4px #313131 solid;
-        padding-bottom: 10px;
-        color: #313131;
-          font-weight: bold;
+        display: block;
+        color: $color;
+        font-weight: bold;
+      }
+      em{
+         display: inline-block;
+          border-bottom: 2px $color solid;
+          padding-bottom: 10px;
+          font-size: 18px;
       }
     }
     .projectList {
         width: 100%;
         margin: 0 auto;
+        padding: 0 10%;
         ul {
             display: flex;
             flex-wrap: wrap;

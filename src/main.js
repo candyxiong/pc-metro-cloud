@@ -9,9 +9,11 @@ import './assets/css/common.scss'
 
 import './plugins/element.js'
 
-import {Carousel,CarouselItem} from 'element-ui'
+import {Carousel,CarouselItem,Steps,Step} from 'element-ui'
 Vue.use(Carousel)
 Vue.use(CarouselItem)
+Vue.use(Steps)
+Vue.use(Step)
 
 
 
