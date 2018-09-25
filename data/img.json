@@ -1,9 +1,0 @@
-{
-  "data":{
-    "imgArr":[
-      {"imgUrl":"../src/assets/images/banner1.jpg"},
-      {"imgUrl":"../src/assets/images/banner2.jpg"},
-      {"imgUrl":"../src/assets/images/banner3.jpg"}
-    ]
-  }
-}
