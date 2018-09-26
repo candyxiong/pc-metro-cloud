@@ -38,7 +38,7 @@
             width: 100%;
             min-width: 1200px;
             margin: 0 auto;
-            padding: 30px 10%;
+            padding: 30px 12%;
             height: 200px;
             background: #2b2b2b;
             .companyText{

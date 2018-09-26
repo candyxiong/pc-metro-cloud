@@ -25,12 +25,7 @@
             <div class="serviceStep">
                 <h2><span>服务流程</span><em>Service step</em></h2>
                 <div class="steps">
-                    <!--<el-steps :active="3">-->
-                        <!--<el-step title="多通道办理" icon="el-icon-tickets" description="关注园区通信服务公众号、通过MyBay  APP、拨打服务热线400-161-3088、亲临现场服务处"></el-step>-->
-                        <!--<el-step title="业务受理" icon="el-icon-service" description="服务平台派出客服人员回访客户，落实需求并受理业务"></el-step>-->
-                        <!--<el-step title="上门安装" icon="el-icon-location-outline" description="在业务受理后进行资源确认，随后预约客户上门安装调试"></el-step>-->
-                    <!--</el-steps>-->
-                    <el-steps :active="3">
+                    <el-steps :active="1" align-center>
                         <el-step title="多通道办理" description="关注园区通信服务公众号、通过MyBay  APP、拨打服务热线400-161-3088、亲临现场服务处"></el-step>
                         <el-step title="业务受理" description="服务平台派出客服人员回访客户，落实需求并受理业务"></el-step>
                         <el-step title="上门安装调试" description="在业务受理后进行资源确认，随后预约客户上门安装调试"></el-step>
@@ -95,6 +90,7 @@
 
 }
 .serviceInfo{
+    @include mainCenter;
     &:after{
         content: ".";
         display: block;
@@ -103,7 +99,6 @@
         visibility: hidden;
     }
     .serviceScope{
-        @include mainCenter;
         @include titleStyle;
         >p{
             text-align: center;
@@ -151,11 +146,11 @@
     }
     .steps{
         //height:300px;
-        width: 1000px;
+        //width: 1100px;
         margin: 50px auto;
     }
     .servicePromise {
-        width: 1000px;
+        @include mainCenter;
         margin: 36px auto;
         @include titleStyle;
         .promiseInfo{
@@ -167,6 +162,7 @@
                     width: 50%;
                     display: inline-block;
                     margin: 60px 0;
+                    text-align: left;
                     img{
                         display: block;
                         width: 54px;

@@ -24,14 +24,14 @@
 
 <style lang="scss" scoped>
 .relate{
-    width: 1000px;
+    width: 1100px;
     margin: 40px auto 100px auto;
     height: 500px;
     position: relative;
     @include titleStyle;
     .phone{
         float: left;
-        width: 380px;
+        width: 400px;
         position: absolute;
         top:50%;
         transform: translateY(-50%);

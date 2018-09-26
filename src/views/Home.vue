@@ -18,9 +18,9 @@
           <h2>四大联手,强强合作,轻松体验,邀您尊享</h2>
           <p>深圳市威莱堡科技有限公司携手深圳电信、深圳联通、深圳移动三大电信运营商，为深圳湾科技生态园、创业投资大厦、创智天地大厦等园区企业提供一站式通信全业务的受理、报装、接入等服务。</p>
           <ul>
+              <li><img src="../assets/images/dx.jpg"></li>
+              <li><img src="../assets/images/lt.jpg"></li>
               <li><img src="../assets/images/yd.jpg"></li>
-              <li><img src="../assets/images/lt.png"></li>
-              <li><img src="../assets/images/dx.png"></li>
           </ul>
       </div>
   </div>
@@ -59,7 +59,7 @@ export default {
 
 <style lang="scss" scoped>
   .home {
-    margin-top: 20px;
+      margin-top: 2px;
     >h2{
       text-align: center;
       font-size: 26px;
@@ -77,9 +77,7 @@ export default {
       }
     }
     .projectList {
-        width: 100%;
-        margin: 0 auto;
-        padding: 0 10%;
+        @include mainCenter;
         ul {
             display: flex;
             flex-wrap: wrap;
@@ -88,12 +86,12 @@ export default {
                 float: left;
                 width: 30%;
                 min-width: 220px;
-                max-width: 270px;
+                max-width: 290px;
                 height: 300px;
                 padding: 2%;
                 border: 1px #ddd solid;
                 border-radius: 4px;
-                margin: 8px;
+                margin: 8px 8px 18px 8px;
                 -webkit-box-shadow: 5px 5px 14px #999;
                 h4{
                     text-align: center;
@@ -111,6 +109,8 @@ export default {
 
     }
       .partnerList {
+          width: 1100px;
+          margin: 0 auto;
           h2{
               text-align: center;
               font-size: 20px;
@@ -118,6 +118,8 @@ export default {
           }
           p{
               text-align: center;
+              line-height: 28px;
+              margin-top: 14px;
           }
           ul {
               display: flex;
