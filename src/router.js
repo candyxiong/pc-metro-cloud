@@ -4,6 +4,9 @@ import Home from "./views/Home";
 import News from "./views/News";
 import Relate from "./views/Relate";
 import Service from "./views/Service";
+import NewsOne from './views/NewsOne'
+import NewsTwo from './views/NewsTwo'
+import NewsThree from './views/NewsThree'
 
 Vue.use(Router);
 
@@ -29,6 +32,21 @@ export default new Router({
         path: "/relate",
         name: "relate",
         component: Relate
+    },
+    {
+        path: "/newsone",
+        name:'newsone',
+        component:NewsOne
+    },
+    {
+        path: "/newstwo",
+        name:'newstwo',
+        component:NewsTwo
+    },
+    {
+        path: "/newsthree",
+        name:'newsthree',
+        component:NewsThree
     }
   ],
   mode:'history',

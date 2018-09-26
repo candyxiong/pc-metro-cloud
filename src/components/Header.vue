@@ -24,7 +24,7 @@
 <style scoped lang="scss">
 .header{
     width: 100%;
-    min-width: 900px;
+    min-width: 1040px;
     margin: 0 auto;
     height: 80px;
     line-height: 80px;

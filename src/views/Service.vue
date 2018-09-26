@@ -113,7 +113,7 @@
                 li{
                     display: inline-block;
                     font-size: 20px;
-                    padding: 14px 0;
+                    padding-bottom: 14px;
                     margin: 0 34px 20px 34px;
                     &.active,&:hover{
                         color: $color;
