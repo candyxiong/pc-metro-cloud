@@ -104,6 +104,7 @@
             text-align: center;
             font-size: 16px;
             margin: 20px 0;
+            color: $color;
         }
         .serviceNav {
             border: 1px #aaa solid;
@@ -114,7 +115,7 @@
                     display: inline-block;
                     font-size: 20px;
                     padding-bottom: 14px;
-                    margin: 0 34px 20px 34px;
+                    margin: 0 34px 30px 34px;
                     &.active,&:hover{
                         color: $color;
                         border-bottom: 1px $color solid;
@@ -122,18 +123,19 @@
                 }
             }
             .tabCon {
-                position: relative;
+                height: 200px;
                 img{
                     width: 330px;
+                    float: left;
                 }
                 p{
-                    position: absolute;
+                    /*position: absolute;
                     top:50%;
                     transform: translateY(-50%);
-                    -webkit-transform: translateY(-50%);
+                    -webkit-transform: translateY(-50%);*/
                     display: inline-block;
                     width: 52%;
-                    line-height: 30px;
+                    line-height: 36px;
                     margin-left: 14px;
                     font-size: 16px;
                 }
@@ -145,8 +147,6 @@
         @include titleStyle
     }
     .steps{
-        //height:300px;
-        //width: 1100px;
         margin: 50px auto;
     }
     .servicePromise {
@@ -162,7 +162,7 @@
                     width: 50%;
                     display: inline-block;
                     margin: 60px 0;
-                    text-align: left;
+                    /*text-align: left;*/
                     img{
                         display: block;
                         width: 54px;
@@ -185,6 +185,7 @@
             }
         }
         .standard {
+            margin-left: 30px;
             h4{
                 font-size: 20px;
                 color: $color;

@@ -31,14 +31,14 @@
     @include titleStyle;
     .phone{
         float: left;
-        width: 400px;
+        width: 450px;
         position: absolute;
         top:50%;
         transform: translateY(-50%);
         -webkit-transform: translateY(-50%);
         p,span{
             display: inline-block;
-            line-height: 30px;
+            line-height: 36px;
             font-size: 16px;
             img{
                 width: 24px;

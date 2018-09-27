@@ -44,7 +44,7 @@
         line-height: 150px;
         margin: 0;
     }
-    .el-carousel__item h3 img{width: 100%}
+    .el-carousel__item h3 img{width: 100%;height: 100%;max-width: 100%;max-height: 100%}
     .el-carousel__container{height: 416px}
     .el-carousel__item:nth-child(2n) {
         background-color: #99a9bf;

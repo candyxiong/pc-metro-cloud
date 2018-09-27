@@ -122,10 +122,11 @@ export default {
               margin-top: 14px;
           }
           ul {
-              display: flex;
-              justify-content: space-around;
               margin: 40px 0;
               li{
+                  display: inline-block;
+                  width: 33%;
+                  text-align: center;
                   img{
                       width: 150px;
                   }
