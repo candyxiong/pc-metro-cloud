@@ -25,13 +25,13 @@
         },
         mounted(){
             //this.carouselH = '500px'
-            var that = this
+            //var that = this
 
 
-            window.onresize = function temp(){
+            //window.onresize = function temp(){
                  //通过点语法获取img的height属性值
-                that.carouselH = `${that.$refs.imageH['0'].height}px`
-            }
+                //that.carouselH = `${that.$refs.imageH['0'].height}px`
+            //}
         }
     }
 </script>
@@ -44,8 +44,8 @@
         line-height: 150px;
         margin: 0;
     }
-    .el-carousel__item h3 img{width: 100%;height: 100%;max-width: 100%;max-height: 100%}
-    .el-carousel__container{height: 416px}
+    .el-carousel__item h3 img{width: 100%;height: 100%;min-width:1300px;max-height: 460px;min-height: 460px}
+    .el-carousel__container{height: 460px}
     .el-carousel__item:nth-child(2n) {
         background-color: #99a9bf;
     }
